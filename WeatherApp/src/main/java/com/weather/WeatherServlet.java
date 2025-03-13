@@ -19,7 +19,7 @@ import jakarta.servlet.http.HttpServletResponse;
 @SuppressWarnings("serial")
 @WebServlet("/weather")
 public class WeatherServlet extends HttpServlet {
-    private static final String API_KEY = "976c92e4c0267c3c1f4b6e3f8bbff1e4"; 
+    private static final String API_KEY = "*************************"; 
     private static final String API_URL = "https://api.openweathermap.org/data/2.5/weather?q=%s&appid=%s&units=metric";
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
