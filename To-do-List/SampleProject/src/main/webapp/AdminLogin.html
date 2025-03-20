@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+       
+        .form-container {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            text-align: center;
+        }
+
+       
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            font-size: 16px;
+            border: 2px solid #0072ff;
+            border-radius: 5px;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        input[type="text"]:focus {
+            border-color: #0056b3;
+            box-shadow: 0px 0px 5px rgba(0, 114, 255, 0.5);
+        }
+
+        
+        input[type="submit"] {
+            background-color: #0072ff;
+            color: white;
+            padding: 12px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            transition: 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        input[type="submit"]:active {
+            background-color: #004080;
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Login</h2>
+        <form action="log" method="post">
+            <input type="text" name="uname" placeholder="User Name"><br>
+            <input type="text" name="pass" placeholder="Password"><br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+</body>
+</html>
